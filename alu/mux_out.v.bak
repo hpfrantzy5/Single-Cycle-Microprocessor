@@ -1,0 +1,20 @@
+`ifndef _MUX_OUT_V_
+`define _MUX_OUT_V_
+
+module muxBneg(
+  input [7:0] B,
+  input  BSEL,
+  output [7:0] Out
+);
+wire B_neg;
+
+B_neg = ~B;
+
+// MUX LOGIC:
+//   if   BSEL == 0 => Out = B;
+//   else            => Out = B_neg;
+assign Out = ( BSEL == 1'b0 ) ? B : B_neg;
+
+endmodule
+
+`endif /* _MUX_CI_V_ */

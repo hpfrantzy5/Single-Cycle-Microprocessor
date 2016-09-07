@@ -1,0 +1,18 @@
+`ifndef _IMM_MUX_V_
+`define _IMM_MUX_V_
+
+module imm_mux (
+	input [7:0] Data_B,
+	input [7:0] IMM_extended,
+	input MB,
+	output reg [7:0] new_Data_B
+);
+
+always @ (*) begin
+	if (MB) new_Data_B = IMM_extended;
+	else new_Data_B = Data_B;
+end
+
+endmodule
+
+`endif /* _IMM_MUX_V_ */

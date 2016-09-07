@@ -1,0 +1,48 @@
+`ifndef _CONSTANTS_V_
+`define _CONSTANTS_V_
+
+`define REG0 3'b000
+`define REG1 3'b001
+`define REG2 3'b010
+`define REG3 3'b011
+`define REG4 3'b100
+`define REG5 3'b101
+`define REG6 3'b110
+`define REG7 3'b111
+
+`define ONE 1'b1;
+`define ZERO 1'b0;
+`define NEG_PADDING 2'b11;
+`define POS_PADDING 2'b00;
+
+`define PC_INCR 8'b00000010;
+
+//`define OP_NOP 4'b0000
+//`define OP_LB 4'b0010
+//`define OP_SB 4'b0100
+//`define OP_ADDI 4'b0101
+//`define OP_ANDI 4'b0110
+//`define OP_ORI 4'b0111
+//`define OP_ADD 4'b1111
+//`define OP_SUB 4'b1111
+//`define OP_SRA 4'b1111
+//`define OP_SRL 4'b1111
+//`define OP_SLL 4'b1111
+//`define OP_AND 4'b1111
+//`define OP_OR 4'b1111
+//
+//`define F_NOP 3'b000
+//`define F_LB 3'b000
+//`define F_SB 3'b000
+//`define F_ADDI 3'b000
+//`define F_ANDI 3'b101
+//`define F_ORI 3'b110
+//`define F_ADD 3'b000
+//`define F_SUB 3'b001
+//`define F_SRA 3'b010
+//`define F_SRL 3'b011
+//`define F_SLL 3'b100
+//`define F_AND 3'b101
+//`define F_OR 3'b110
+
+`endif /* _CONSTANTS_V_ */

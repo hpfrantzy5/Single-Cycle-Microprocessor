@@ -1,0 +1,11 @@
+`ifndef _SHIFTER_V_
+`define _SHIFTER_V_
+
+module shifter
+(
+  //Inputs and outputs go here
+);
+
+endmodule
+
+`endif /* _SHIFTER_V_ */

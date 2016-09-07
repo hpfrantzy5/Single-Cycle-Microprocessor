@@ -1,0 +1,29 @@
+`ifndef _ADDER_TEST_V_
+`define _ADDER_TEST_V_
+
+module adder_test;
+
+reg [7:0] A, B;
+reg Cin;
+
+wire [7:0] Sum;
+wire Cout, Ovr;
+
+adder UUT(
+	.A		(A),
+	.B		(B),
+	.Cin  (Cin),
+	.Sum	(Sum),
+	.Cout (Cout),
+	.Ovr	(Ovr)
+);
+
+initial begin
+	A = 8'b11101010;
+	B = 8'b01110101;
+	Cin = 0;
+end
+
+endmodule
+
+`endif /* _ALU_TEST_V_ */

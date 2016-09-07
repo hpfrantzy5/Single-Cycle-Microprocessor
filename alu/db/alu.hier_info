@@ -1,0 +1,392 @@
+|alu
+A[0] => A[0].IN3
+A[1] => A[1].IN3
+A[2] => A[2].IN3
+A[3] => A[3].IN3
+A[4] => A[4].IN3
+A[5] => A[5].IN3
+A[6] => A[6].IN3
+A[7] => A[7].IN3
+B[0] => B[0].IN2
+B[1] => B[1].IN2
+B[2] => B[2].IN2
+B[3] => B[3].IN2
+B[4] => B[4].IN2
+B[5] => B[5].IN2
+B[6] => B[6].IN2
+B[7] => B[7].IN2
+OP[0] => OP[0].IN1
+OP[1] => OP[1].IN1
+OP[2] => OP[2].IN1
+
+
+|alu|control:control0
+OP[0] => Mux0.IN10
+OP[0] => Mux1.IN10
+OP[0] => Mux2.IN10
+OP[0] => Mux3.IN10
+OP[0] => Mux4.IN10
+OP[0] => Mux5.IN10
+OP[0] => Mux6.IN10
+OP[0] => Mux7.IN10
+OP[0] => Mux8.IN10
+OP[0] => Mux9.IN10
+OP[0] => Mux10.IN10
+OP[0] => Equal0.IN0
+OP[1] => Mux0.IN9
+OP[1] => Mux1.IN9
+OP[1] => Mux2.IN9
+OP[1] => Mux3.IN9
+OP[1] => Mux4.IN9
+OP[1] => Mux5.IN9
+OP[1] => Mux6.IN9
+OP[1] => Mux7.IN9
+OP[1] => Mux8.IN9
+OP[1] => Mux9.IN9
+OP[1] => Mux10.IN9
+OP[1] => Equal0.IN2
+OP[2] => Mux0.IN8
+OP[2] => Mux1.IN8
+OP[2] => Mux2.IN8
+OP[2] => Mux3.IN8
+OP[2] => Mux4.IN8
+OP[2] => Mux5.IN8
+OP[2] => Mux6.IN8
+OP[2] => Mux7.IN8
+OP[2] => Mux8.IN8
+OP[2] => Mux9.IN8
+OP[2] => Mux10.IN8
+OP[2] => Equal0.IN1
+
+
+|alu|muxBneg:muxBneg0
+B[0] => Out.DATAB
+B[0] => Out.DATAA
+B[1] => Out.DATAB
+B[1] => Out.DATAA
+B[2] => Out.DATAB
+B[2] => Out.DATAA
+B[3] => Out.DATAB
+B[3] => Out.DATAA
+B[4] => Out.DATAB
+B[4] => Out.DATAA
+B[5] => Out.DATAB
+B[5] => Out.DATAA
+B[6] => Out.DATAB
+B[6] => Out.DATAA
+B[7] => Out.DATAB
+B[7] => Out.DATAA
+BSEL[0] => Equal0.IN1
+BSEL[1] => Equal0.IN0
+
+
+|alu|muxCI:muxCI0
+CISEL => CIout.DATAIN
+
+
+|alu|adder:adder0
+A[0] => a[0].IN1
+A[1] => a[1].IN1
+A[2] => a[2].IN1
+A[3] => a[3].IN1
+A[4] => a[4].IN1
+A[5] => a[5].IN1
+A[6] => a[6].IN1
+A[7] => a[7].IN1
+B[0] => b[0].IN1
+B[1] => b[1].IN1
+B[2] => b[2].IN1
+B[3] => b[3].IN1
+B[4] => b[4].IN1
+B[5] => b[5].IN1
+B[6] => b[6].IN1
+B[7] => b[7].IN1
+Cin => cin.IN1
+
+
+|alu|adder:adder0|one_bit_adder:inst0
+A => Sum.IN0
+A => Sum.IN0
+A => Cout.IN0
+A => Sum.IN0
+A => Sum.IN0
+B => Sum.IN1
+B => Sum.IN1
+B => Cout.IN0
+B => Sum.IN1
+B => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+
+
+|alu|adder:adder0|one_bit_adder:inst1
+A => Sum.IN0
+A => Sum.IN0
+A => Cout.IN0
+A => Sum.IN0
+A => Sum.IN0
+B => Sum.IN1
+B => Sum.IN1
+B => Cout.IN0
+B => Sum.IN1
+B => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+
+
+|alu|adder:adder0|one_bit_adder:inst2
+A => Sum.IN0
+A => Sum.IN0
+A => Cout.IN0
+A => Sum.IN0
+A => Sum.IN0
+B => Sum.IN1
+B => Sum.IN1
+B => Cout.IN0
+B => Sum.IN1
+B => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+
+
+|alu|adder:adder0|one_bit_adder:inst3
+A => Sum.IN0
+A => Sum.IN0
+A => Cout.IN0
+A => Sum.IN0
+A => Sum.IN0
+B => Sum.IN1
+B => Sum.IN1
+B => Cout.IN0
+B => Sum.IN1
+B => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+
+
+|alu|adder:adder0|one_bit_adder:inst4
+A => Sum.IN0
+A => Sum.IN0
+A => Cout.IN0
+A => Sum.IN0
+A => Sum.IN0
+B => Sum.IN1
+B => Sum.IN1
+B => Cout.IN0
+B => Sum.IN1
+B => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+
+
+|alu|adder:adder0|one_bit_adder:inst5
+A => Sum.IN0
+A => Sum.IN0
+A => Cout.IN0
+A => Sum.IN0
+A => Sum.IN0
+B => Sum.IN1
+B => Sum.IN1
+B => Cout.IN0
+B => Sum.IN1
+B => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+
+
+|alu|adder:adder0|one_bit_adder:inst6
+A => Sum.IN0
+A => Sum.IN0
+A => Cout.IN0
+A => Sum.IN0
+A => Sum.IN0
+B => Sum.IN1
+B => Sum.IN1
+B => Cout.IN0
+B => Sum.IN1
+B => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+
+
+|alu|adder:adder0|one_bit_adder:inst7
+A => Sum.IN0
+A => Sum.IN0
+A => Cout.IN0
+A => Sum.IN0
+A => Sum.IN0
+B => Sum.IN1
+B => Sum.IN1
+B => Cout.IN0
+B => Sum.IN1
+B => Sum.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Cin => Sum.IN1
+Cin => Sum.IN1
+
+
+|alu|shifter:shifter0
+A[0] => Y.DATAA
+A[0] => SO.DATAB
+A[0] => SO.DATAB
+A[0] => CO.DATAB
+A[1] => Y.DATAA
+A[1] => Y.DATAB
+A[1] => Y.DATAB
+A[2] => Y.DATAA
+A[2] => Y.DATAB
+A[2] => Y.DATAB
+A[3] => Y.DATAA
+A[3] => Y.DATAB
+A[3] => Y.DATAB
+A[4] => Y.DATAA
+A[4] => Y.DATAB
+A[4] => Y.DATAB
+A[5] => Y.DATAA
+A[5] => Y.DATAB
+A[5] => Y.DATAB
+A[6] => Y.DATAA
+A[6] => Y.DATAB
+A[6] => Y.DATAB
+A[7] => Y.DATAB
+A[7] => SO.DATAA
+A[7] => Y.DATAB
+A[7] => Y.DATAB
+LA => Decoder0.IN0
+LR => Y.OUTPUTSELECT
+LR => Y.OUTPUTSELECT
+LR => Y.OUTPUTSELECT
+LR => Y.OUTPUTSELECT
+LR => Y.OUTPUTSELECT
+LR => Y.OUTPUTSELECT
+LR => Y.OUTPUTSELECT
+LR => Y.OUTPUTSELECT
+LR => SO.OUTPUTSELECT
+
+
+|alu|logical:logical0
+A[0] => y.IN0
+A[0] => y.IN0
+A[1] => y.IN0
+A[1] => y.IN0
+A[2] => y.IN0
+A[2] => y.IN0
+A[3] => y.IN0
+A[3] => y.IN0
+A[4] => y.IN0
+A[4] => y.IN0
+A[5] => y.IN0
+A[5] => y.IN0
+A[6] => y.IN0
+A[6] => y.IN0
+A[7] => y.IN0
+A[7] => y.IN0
+B[0] => y.IN1
+B[0] => y.IN1
+B[1] => y.IN1
+B[1] => y.IN1
+B[2] => y.IN1
+B[2] => y.IN1
+B[3] => y.IN1
+B[3] => y.IN1
+B[4] => y.IN1
+B[4] => y.IN1
+B[5] => y.IN1
+B[5] => y.IN1
+B[6] => y.IN1
+B[6] => y.IN1
+B[7] => y.IN1
+B[7] => y.IN1
+OP => y.OUTPUTSELECT
+OP => y.OUTPUTSELECT
+OP => y.OUTPUTSELECT
+OP => y.OUTPUTSELECT
+OP => y.OUTPUTSELECT
+OP => y.OUTPUTSELECT
+OP => y.OUTPUTSELECT
+OP => y.OUTPUTSELECT
+
+
+|alu|muxCO:muxCO0
+OSEL => CO.OUTPUTSELECT
+OSEL => CO.OUTPUTSELECT
+CO_adder => CO.DATAB
+CO_shifter => CO.DATAB
+
+
+|alu|mux_out:mux_out0
+adder[0] => Y.DATAB
+adder[1] => Y.DATAB
+adder[2] => Y.DATAB
+adder[3] => Y.DATAB
+adder[4] => Y.DATAB
+adder[5] => Y.DATAB
+adder[6] => Y.DATAB
+adder[7] => Y.DATAB
+shifter[0] => Y.DATAB
+shifter[1] => Y.DATAB
+shifter[2] => Y.DATAB
+shifter[3] => Y.DATAB
+shifter[4] => Y.DATAB
+shifter[5] => Y.DATAB
+shifter[6] => Y.DATAB
+shifter[7] => Y.DATAB
+logical[0] => Y.DATAA
+logical[1] => Y.DATAA
+logical[2] => Y.DATAA
+logical[3] => Y.DATAA
+logical[4] => Y.DATAA
+logical[5] => Y.DATAA
+logical[6] => Y.DATAA
+logical[7] => Y.DATAA
+OSEL[0] => Equal0.IN1
+OSEL[0] => Equal1.IN0
+OSEL[1] => Equal0.IN0
+OSEL[1] => Equal1.IN1
+
+
+|alu|bcd_7seg:Y4_0
+DATA[0] => Decoder0.IN3
+DATA[1] => Decoder0.IN2
+DATA[2] => Decoder0.IN1
+DATA[3] => Decoder0.IN0
+
+
+|alu|bcd_7seg:Y4_1
+DATA[0] => Decoder0.IN3
+DATA[1] => Decoder0.IN2
+DATA[2] => Decoder0.IN1
+DATA[3] => Decoder0.IN0
+
+

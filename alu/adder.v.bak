@@ -1,0 +1,12 @@
+`ifndef _ADDER_V_
+`define _ADDER_V_
+
+module adder
+(
+  //Inputs and outputs go here
+);
+
+
+endmodule
+
+`endif /* _ADDER_V_ */

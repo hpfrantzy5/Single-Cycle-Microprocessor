@@ -1,0 +1,108 @@
+`ifndef _CPU_V_
+`define _CPU_V_
+
+`include "constants.v"
+
+module cpu
+(
+  input              CLK,
+  input              RESET,
+  input       [15:0] Iin,
+  input       [ 7:0] Din,
+  output reg  [ 7:0] PC,
+  output reg  [ 7:0] NextPC,
+  output  [ 7:0] DataA,
+  output  [ 7:0] DataB,
+  output  [ 7:0] DataC,
+  output  [ 7:0] DataD,
+  output         MW
+);
+
+wire [2:0] DR, SA, SB, FS;
+wire [5:0] IMM;
+wire MB, MD, LD, SO, Z, N, C, V, ZERO;
+wire [7:0] IMM_extended, new_Data_B;
+wire Over, Cout;
+wire [7:0] PC_INCR, PC_wire, NextPC_wire;
+
+
+pc pc0 (
+	.CLK (CLK),
+	.RESET (RESET),
+	.NextPC (NextPC_wire),
+	.PC (PC_wire)
+);
+
+adder adder0 (
+	.A (PC_wire),
+	.B (8'b00000010),
+	.Cin (0),
+	.Sum (NextPC_wire),
+	.Cout (Cout),
+	.Ovr (Over)
+);
+
+decoder decoder0 (
+	.Iin (Iin),
+	.DR (DR),
+	.SA (SA),
+	.SB (SB),
+	.FS (FS),
+	.IMM (IMM),
+	.MB (MB),
+	.MD (MD),
+	.LD (LD),
+	.MW (MW)
+);
+
+register_file rf0 (
+	.CLK (CLK),
+	.RESET (RESET),
+	.SA (SA),
+	.SB (SB),
+	.LD (LD),
+	.DR (DR),
+	.Din (Din),
+	.Data_A (DataA),
+	.Data_B (DataB)
+);
+
+sign_extend sign_ext0 (
+	.IMM (IMM),
+	.IMM_new (IMM_extended)
+);
+
+imm_mux imm_mux0 (
+	.Data_B (DataB),
+	.IMM_extended (IMM_extended),
+	.MB (MB),
+	.new_Data_B (new_Data_B)
+);
+
+alu alu0 (
+  .A (DataA),
+  .B (new_Data_B),
+  .OP (FS),
+  .Y  (DataD),
+  .ZRO (Z),
+  .NEG (N),
+  .SO  (SO),
+  .CO  (C),
+  .OVR (V)
+);
+
+mem_mux mem_mux0(
+	.dram_output (Din),
+	.Data_D (DataD),
+	.MD (MD),
+	.Data_C (DataC)
+);
+
+always @ (PC_wire, NextPC_wire) begin
+	PC = PC_wire;
+	NextPC = NextPC_wire;
+end
+
+endmodule
+
+`endif /* _CPU_V_ */

@@ -1,0 +1,37 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Lab User\Downloads\Lab 5\Lab 5\simulation\modelsim
+vlab5
+I8V37cVK9kfm<O]g:>N3c53
+VRnUE`lAH:ZJDXIJN?Al;[0
+Z1 dC:\Users\Lab User\Downloads\Lab 5\Lab 5\simulation\modelsim
+w1386123013
+8lab5.vo
+Flab5.vo
+L0 31
+Z2 OV;L;6.6d;45
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!s100 b>LIM>l6OWSCjgPN5G3=G3
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vlab5_test
+!s100 C00W4@WVHgeh]Rjli:N0A0
+I6HIkh6gZRDY=h@BZN^aWe3
+V]Jm_2niz5TW3C:jnY]Yd@0
+R1
+w1386122711
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5_test.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5_test.v
+L0 13
+R2
+r1
+!s85 0
+31
+!s101 -O0
+R3
+!s92 -vlog01compat -work work {+incdir+C:/Users/Lab User/Downloads/Lab 5/Lab 5} -O0

@@ -1,0 +1,72 @@
+`ifndef _ALU_V_
+`define _ALU_V_
+
+module alu
+(
+  input  [7:0] A,
+  input  [7:0] B,
+  input  [2:0] OP,
+  output [7:0] Y,
+  output [6:0] Y1_SEGMENTS, //Seven segment display for upper 4 bits of Y
+  output [6:0] Y0_SEGMENTS, //Seven segment display for lower 4 bits of Y
+  output ZRO,
+  output NEG,
+  output SO,
+  output CO,
+  output OVR
+);
+
+wire CISEL, LA, LR, LOP;
+wire [1:0] BSEL;
+
+
+//YOUR ALU CODE GOES BELOW HERE
+
+control control0(
+  .OP 	(OP),
+  .CISEL	(CISEL),
+  .BSEL	(BSEL),
+  .LA		(LA),
+  .LR		(LR),
+  .LOP	(LOP)
+);
+
+//adder adder0
+//(
+//  .A		(A),
+//  .B		(B),
+//  .Cin	(CISEL),
+//  .Sum	(Y),
+//  .Cout	(CO),
+//  .Ovr	(OVR)
+//);
+
+shifter shifter0
+(
+  .A		(A),
+  .LA		(LA),
+  .LR		(LR),
+  .Y		(Y),
+  .SO		(SO),
+  .OVR	(OVR),
+  .CO		(CO)
+  
+);
+
+logical logical0
+(
+  .A	(A),
+  .B	(B),
+  .OP	(LOP),
+  .Y	(Y)
+);
+
+assign NEG = Y[7] ? 1 : 0;
+assign ZRO = (Y == 8'd0) ? 1 : 0;
+
+//YOUR ALU CODE GOES ABOVE HERE
+//USE THE SPACE BELOW FOR SEVEN SEGMENT DRIVERS FOR THE OUTPUTS
+
+endmodule
+
+`endif /* _ALU_V_ */

@@ -1,0 +1,11 @@
+`ifndef _LOGICAL_V_
+`define _LOGICAL_V_
+
+module logical
+(
+  //Inputs and outputs go here
+);
+
+endmodule
+
+`endif /* _LOGICAL_V_ */

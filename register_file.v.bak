@@ -1,0 +1,73 @@
+`ifndef _REGISTER_FILE_V_
+`define _REGISTER_FILE_V_
+
+`include "constants.v"
+
+module register_file (
+	input CLK,
+	input RESET,
+	input [2:0] SA,
+	input [2:0] SB,
+	input LD,
+	input [2:0] DR,
+	input [7:0] Din,
+	output reg [7:0] Data_A,
+	output reg [7:0] Data_B
+);
+
+wire [7:0] register_array [7:0];
+reg [7:0] LOAD;
+
+genvar i;
+generate 
+	for (i=4'b0; i < 4'b1000; i= i+4'b0001) 
+		begin : registers
+			register register_ 
+			(
+				.CLK (CLK),
+				.RESET (RESET),
+				.D (Din),
+				.LD (LOAD[i]),
+				.Q (register_array[i])
+			);
+		end
+endgenerate
+
+//Decoder: Decides which load to use
+always @ (*) begin
+	case (DR)
+		`REG0: LOAD[0] = LD;
+		`REG1: LOAD[1] = LD;
+		`REG2: LOAD[2] = LD;
+		`REG3: LOAD[3] = LD;
+		`REG4: LOAD[4] = LD;
+		`REG5: LOAD[5] = LD;
+		`REG6: LOAD[6] = LD;
+		`REG7: LOAD[7] = LD;
+		default: LOAD = 8'b0;
+	endcase
+	//Decoders for deciding SA/SB stuffs
+	case (SA) 
+		`REG0: Data_A = register_array[0];
+		`REG1: Data_A = register_array[1];
+		`REG2: Data_A = register_array[2];
+		`REG3: Data_A = register_array[3];
+		`REG4: Data_A = register_array[4];
+		`REG5: Data_A = register_array[5];
+		`REG6: Data_A = register_array[6];
+		`REG7: Data_A = register_array[7];
+	endcase
+	case (SB) 
+		`REG0: Data_B= register_array[0];
+		`REG1: Data_B= register_array[1];
+		`REG2: Data_B= register_array[2];
+		`REG3: Data_B= register_array[3];
+		`REG4: Data_B= register_array[4];
+		`REG5: Data_B= register_array[5];
+		`REG6: Data_B= register_array[6];
+		`REG7: Data_B= register_array[7];
+	endcase
+end
+
+endmodule
+`endif /* _REGISTER_FILE_V_ */

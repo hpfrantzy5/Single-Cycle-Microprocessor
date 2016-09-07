@@ -1,0 +1,253 @@
+# Reading C:/altera/11.0/modelsim_ae/tcl/vsim/pref.tcl 
+# do lab5_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\11.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\11.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5iramHBM.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module lab5iramHBM
+# 
+# Top level modules:
+# 	lab5iramHBM
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5dramHBM.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module lab5dramHBM
+# 
+# Top level modules:
+# 	lab5dramHBM
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5/alu {C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/shifter.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module shifter
+# 
+# Top level modules:
+# 	shifter
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5/alu {C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/one_bit_adder.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module one_bit_adder
+# 
+# Top level modules:
+# 	one_bit_adder
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5/alu {C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/muxCO.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module muxCO
+# 
+# Top level modules:
+# 	muxCO
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5/alu {C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/muxCI.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module muxCI
+# 
+# Top level modules:
+# 	muxCI
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5/alu {C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/muxBneg.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module muxBneg
+# 
+# Top level modules:
+# 	muxBneg
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5/alu {C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/mux_out.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module mux_out
+# 
+# Top level modules:
+# 	mux_out
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5/alu {C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/logical.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module logical
+# 
+# Top level modules:
+# 	logical
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5/alu {C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/control.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5/alu {C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/alu.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5/alu {C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/adder.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/pc.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module pc
+# 
+# Top level modules:
+# 	pc
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/mem_mux.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module mem_mux
+# 
+# Top level modules:
+# 	mem_mux
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5_clk.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module lab5_clk
+# -- Compiling module pclock
+# 
+# Top level modules:
+# 	lab5_clk
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module lab5
+# 
+# Top level modules:
+# 	lab5
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/imm_mux.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module imm_mux
+# 
+# Top level modules:
+# 	imm_mux
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/hex_7seg.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module hex_7seg
+# 
+# Top level modules:
+# 	hex_7seg
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/constants.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/pc_mux.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module pc_mux
+# 
+# Top level modules:
+# 	pc_mux
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/branch_mux.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module branch_mux
+# 
+# Top level modules:
+# 	branch_mux
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/sign_extend.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sign_extend
+# 
+# Top level modules:
+# 	sign_extend
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/register_file.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/register.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/decoder.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/cpu.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/halt.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module halt
+# 
+# Top level modules:
+# 	halt
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Lab\ User/Downloads/Lab\ 5/Lab\ 5 {C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5_test.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module lab5_test
+# 
+# Top level modules:
+# 	lab5_test
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc" lab5_test
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps lab5_test 
+# //  ModelSim ALTERA 6.6d Nov  2 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.lab5_test
+# Loading work.lab5
+# Loading work.lab5_clk
+# Loading work.pclock
+# Loading work.cpu
+# Loading work.halt
+# Loading work.pc
+# Loading work.adder
+# Loading work.one_bit_adder
+# Loading work.sign_extend
+# Loading work.pc_mux
+# Loading work.decoder
+# Loading work.register_file
+# Loading work.register
+# Loading work.imm_mux
+# Loading work.alu
+# Loading work.control
+# Loading work.muxBneg
+# Loading work.muxCI
+# Loading work.shifter
+# Loading work.logical
+# Loading work.muxCO
+# Loading work.mux_out
+# Loading work.branch_mux
+# Loading work.mem_mux
+# Loading work.lab5iramHBM
+# Loading work.lab5dramHBM
+# Loading work.hex_7seg
+# ** Warning: (vsim-3017) C:/Users/Lab User/Downloads/Lab 5/Lab 5/cpu.v(50): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /lab5_test/UUT/cpu0/adder_plus2
+# ** Warning: (vsim-3722) C:/Users/Lab User/Downloads/Lab 5/Lab 5/cpu.v(50): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/Lab User/Downloads/Lab 5/Lab 5/cpu.v(50): [TFMPC] - Missing connection for port 'Ovr'.
+# ** Warning: (vsim-3017) C:/Users/Lab User/Downloads/Lab 5/Lab 5/cpu.v(63): [TFMPC] - Too few port connections. Expected 6, found 4.
+#         Region: /lab5_test/UUT/cpu0/adder_branch
+# ** Warning: (vsim-3722) C:/Users/Lab User/Downloads/Lab 5/Lab 5/cpu.v(63): [TFMPC] - Missing connection for port 'Cout'.
+# ** Warning: (vsim-3722) C:/Users/Lab User/Downloads/Lab 5/Lab 5/cpu.v(63): [TFMPC] - Missing connection for port 'Ovr'.
+# ** Warning: (vsim-3015) C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5.v(97): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'SEGMENTS'. The port definition is at: C:/Users/Lab User/Downloads/Lab 5/Lab 5/hex_7seg.v(7).
+#         Region: /lab5_test/UUT/lowerIOH
+# ** Warning: (vsim-3015) C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5.v(104): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'SEGMENTS'. The port definition is at: C:/Users/Lab User/Downloads/Lab 5/Lab 5/hex_7seg.v(7).
+#         Region: /lab5_test/UUT/upperIOH
+# ** Warning: (vsim-3015) C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5.v(111): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'SEGMENTS'. The port definition is at: C:/Users/Lab User/Downloads/Lab 5/Lab 5/hex_7seg.v(7).
+#         Region: /lab5_test/UUT/lowerIOG
+# ** Warning: (vsim-3015) C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5.v(117): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'SEGMENTS'. The port definition is at: C:/Users/Lab User/Downloads/Lab 5/Lab 5/hex_7seg.v(7).
+#         Region: /lab5_test/UUT/upperIOG
+# ** Warning: (vsim-3015) C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5.v(123): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'SEGMENTS'. The port definition is at: C:/Users/Lab User/Downloads/Lab 5/Lab 5/hex_7seg.v(7).
+#         Region: /lab5_test/UUT/lowerIOF
+# ** Warning: (vsim-3015) C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5.v(129): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'SEGMENTS'. The port definition is at: C:/Users/Lab User/Downloads/Lab 5/Lab 5/hex_7seg.v(7).
+#         Region: /lab5_test/UUT/upperIOF
+# ** Warning: (vsim-3015) C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5.v(135): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'SEGMENTS'. The port definition is at: C:/Users/Lab User/Downloads/Lab 5/Lab 5/hex_7seg.v(7).
+#         Region: /lab5_test/UUT/lowerIOE
+# ** Warning: (vsim-3015) C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5.v(141): [PCDPC] - Port size (7 or 7) does not match connection size (1) for port 'SEGMENTS'. The port definition is at: C:/Users/Lab User/Downloads/Lab 5/Lab 5/hex_7seg.v(7).
+#         Region: /lab5_test/UUT/upperIOE
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module lab5_test at C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5_test.v line 113
+# Simulation Breakpoint: Break in Module lab5_test at C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5_test.v line 113
+# MACRO ./lab5_run_msim_rtl_verilog.do PAUSED at line 43

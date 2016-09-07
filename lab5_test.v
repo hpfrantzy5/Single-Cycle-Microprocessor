@@ -1,0 +1,117 @@
+/* lab5_test.v
+  ECE 2300, Fall 2013
+  
+   Author: Saugata Ghose
+  Last modified: November 5, 2013
+  
+  Description: Skeleton test bench for Lab 5 (Single-Cycle Microprocessor).
+*/
+
+// sets the granularity at which we simulate
+`timescale 1 ns / 1 ps
+
+module lab5_test;
+
+// inputs
+reg         CLK_50;
+reg         CLK_SEL;
+reg         RESET;
+reg  [ 7:0] IOA;
+reg  [ 7:0] IOB;
+reg         EN_L;
+
+// outputs
+wire        VAR_CLK;
+wire [ 7:0] DataA;
+wire [ 7:0] DataB;
+wire [ 7:0] DataC;
+wire [ 7:0] DataD;
+wire [ 7:0] Din;
+wire [15:0] Iin;
+wire [ 7:0] IOC;
+wire [ 7:0] IOD;
+wire [ 7:0] IOE;
+wire [ 7:0] IOF;
+wire [ 7:0] IOG;
+wire [ 7:0] IOH;
+wire [ 7:0] NextPC;
+wire [ 7:0] PC;
+
+// instance of lab5 module to test
+lab5 UUT
+(
+  .CLK_50  ( CLK_50 ),
+  .CLK_SEL ( CLK_SEL ),
+  .RESET   ( RESET ),
+  .IOA     ( IOA ),
+  .IOB     ( IOB ),
+  .EN_L    ( EN_L ),
+  .VAR_CLK ( VAR_CLK ),
+  .DataA   ( DataA ),
+  .DataB   ( DataB ),
+  .DataC   ( DataC ),
+  .DataD   ( DataD ),
+  .Din     ( Din ),
+  .Iin     ( Iin ),
+  .IOE     ( IOE ),
+  .IOF     ( IOF ),
+  .IOG     ( IOG ),
+  .IOH     ( IOH ),
+  .LEDG    ( IOD ),
+  .LEDR    ( IOC ),
+  .NextPC  ( NextPC ),
+  .PC      ( PC )
+);
+
+/* All of the initial and always blocks below will work in parallel.
+   Starting at time t = 0, they will all start counting the number
+  of ticks.
+*/
+
+
+// CLK_50: generate a 50 MHz clock (rising edge does not start until
+//   10,000 ticks (10 ns) into simulation, and each clock cycle lasts for
+//   20,000 ticks (20 ns)
+always begin
+  CLK_50 = 1'b0;
+  CLK_50 = #10000 1'b1;
+  #10000;
+end 
+
+// CLK_SEL: choose a 10 MHz clock; each clock cycle will last 100,000 ticks (100 ns)
+initial begin
+  CLK_SEL = 1'b1;
+end 
+
+// TEST CASES: add your test cases in the block here, just like we did in combinational logic
+// REMEMBER: separate each test case by delays that are multiples of #100000, so we can see
+//    the output for at least one cycle (since we chose a 10 MHz clock)
+initial begin
+  // wait at the beginning to make sure that we don't start on a rising clock edge -
+  //    this guarantees that we give the flip flops enough setup time
+  #40000;
+  
+  // start TEST CASES here
+  RESET = 1'b1;
+  EN_L  = 1'b1;
+  IOA   = 8'b00000011;
+  IOB   = 8'b10101101;
+  
+  #100000;
+
+  RESET = 1'b0;
+  
+  #10000000;
+  
+  /* ADD ALL OF YOUR OTHER TEST CASES BELOW THIS LINE */
+  
+  /* ADD ALL OF YOUR OTHER TEST CASES ABOVE THIS LINE */
+  
+  // Since the clock (see above) always keeps alternating, the test bench will never run out
+  // of things to do.  As a result, we need to tell ModelSim to explicitly stop once we are
+  // done with all of our test cases.
+  $stop;
+end 
+
+endmodule
+

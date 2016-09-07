@@ -1,0 +1,84 @@
+`ifndef _REGISTER_V_
+`define _REGISTER_V_
+
+module register (
+	input CLK,
+	input RESET,
+	input [7:0] D,
+	input LD,
+	output reg [7:0] Q
+);
+
+wire [7:0] temp_Q;
+
+d_flip_flop dff0 (
+	.CLK	(CLK),
+	.RESET	(RESET),
+	.D	(D[0]),
+	.LD (LD),
+	.Q (temp_Q[0])
+);
+
+d_flip_flop dff1 (
+	.CLK	(CLK),
+	.RESET	(RESET),
+	.D	(D[1]),
+	.LD (LD),
+	.Q (temp_Q[1])
+);
+
+d_flip_flop dff2 (
+	.CLK	(CLK),
+	.RESET	(RESET),
+	.D	(D[2]),
+	.LD (LD),
+	.Q (temp_Q[2])
+);
+
+d_flip_flop dff3 (
+	.CLK	(CLK),
+	.RESET	(RESET),
+	.D	(D[3]),
+	.LD (LD),
+	.Q (temp_Q[3])
+);
+
+d_flip_flop dff4 (
+	.CLK	(CLK),
+	.RESET	(RESET),
+	.D	(D[4]),
+	.LD (LD),
+	.Q (temp_Q[4])
+);
+
+d_flip_flop dff5 (
+	.CLK	(CLK),
+	.RESET	(RESET),
+	.D	(D[5]),
+	.LD (LD),
+	.Q (temp_Q[5])
+);
+
+d_flip_flop dff6 (
+	.CLK	(CLK),
+	.RESET	(RESET),
+	.D	(D[6]),
+	.LD (LD),
+	.Q (temp_Q[6])
+);
+
+d_flip_flop dff7 (
+	.CLK	(CLK),
+	.RESET	(RESET),
+	.D	(D[7]),
+	.LD (LD),
+	.Q (temp_Q[7])
+);
+
+always @ (posedge CLK) begin
+	Q <= temp_Q;
+end
+endmodule
+
+
+`endif /* _REGISTER_V_ */

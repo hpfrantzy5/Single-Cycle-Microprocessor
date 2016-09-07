@@ -1,0 +1,18 @@
+`ifndef _SIGN_EXTEND_V_
+`define _SIGN_EXTEND_V_
+
+`include "constants.v"
+
+module sign_extend (
+	input [5:0] IMM,
+	output reg [7:0] IMM_new
+);
+reg [2:0] NP, PP;
+
+always @ (*) begin
+	if (IMM[5]) IMM_new = {2'b11,IMM};
+	else IMM_new = {2'b00,IMM};
+end
+
+endmodule
+`endif /* _SIGN_EXTEND_V_ */

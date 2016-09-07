@@ -1,0 +1,200 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Vasudharini\Downloads\alu (1)\alu\simulation\modelsim
+vadder
+I@;36SN;]W76Y7[A8<D6_X2
+VYl_<B<6BTE9``52kG8=691
+Z1 dC:\Users\Vasudharini\Downloads\alu (1)\alu\simulation\modelsim
+Z2 w1383547054
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/adder.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/adder.v
+L0 4
+Z3 OV;L;6.6d;45
+r1
+31
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Vasudharini/Downloads/alu (1)/alu} -O0
+!s100 400;E^HzKFbmLPcmDXYfi0
+!s85 0
+!s101 -O0
+valu
+IEOh<@L7YE<[>lN8?=3[:D3
+V>^4C^KKM@CJ@N@ZGCD1YS1
+R1
+w1383578117
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/alu.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/alu.v
+L0 4
+R3
+r1
+31
+R4
+R5
+!s100 YfFRKh`Ij=7T>g6n2nQeE1
+!s85 0
+!s101 -O0
+valu_test
+!s100 9]QzCbb2j<gg[SH4hW[L[0
+I8IZOJSzo2OO2R8YZcMJ7B1
+Vjfh^imoK[J25gP53WS`?31
+R1
+w1383579190
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/alu_test.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/alu_test.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s101 -O0
+R4
+R5
+vbcd_7seg
+IRFbQQm13UR39L;g[U>5G_1
+VO@Vz2B>BX6IdWWd_Y][WS1
+R1
+w1381333620
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/bcd_7seg.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/bcd_7seg.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!s100 hnOhL5gQh4UifRiZbA6R12
+!s85 0
+!s101 -O0
+vcontrol
+Ib=IDU]GD_e2z8Jjd@KMJj0
+VO@;eR0WjT@Vi9?8k8[ZeO2
+R1
+w1383571157
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/control.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/control.v
+L0 11
+R3
+r1
+31
+R4
+R5
+!s100 2[Sh6k:Hbg0OZkLhKj=Xo1
+!s85 0
+!s101 -O0
+vlogical
+I8;4EGXF?d26>9MPhU]:[`0
+VmI4AnjHEYRLUd_6R<8P0Z1
+R1
+w1383532204
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/logical.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/logical.v
+L0 4
+R3
+r1
+31
+R4
+R5
+!s100 =YbF<6AafW1Jc@5E@CQ`I0
+!s85 0
+!s101 -O0
+vmux_out
+I;bc0glOUk4kO42nzjZKiJ1
+V3O0MDB0;BoD5l3_J@@3lT1
+R1
+w1383535118
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/mux_out.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/mux_out.v
+L0 4
+R3
+r1
+31
+R4
+R5
+!s100 MTfDZHn1UhA8bW=NG404;2
+!s85 0
+!s101 -O0
+vmuxBneg
+Ii]=[iBDd<562J4i4Bhi5R3
+V9zYg:6jg803U?;c0aUCSk1
+R1
+w1383572216
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/muxBneg.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/muxBneg.v
+L0 4
+R3
+r1
+31
+R4
+R5
+nmux@bneg
+!s100 zO`JCM49b;W`?9=MTo3B32
+!s85 0
+!s101 -O0
+vmuxCI
+IVfQAJVhMF8:@TG<=h8BNc2
+V2<Me4HXiVRY[l<jLD8mH31
+R1
+w1383360094
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/muxCI.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/muxCI.v
+L0 4
+R3
+r1
+31
+R4
+nmux@c@i
+R5
+!s100 Ffi>8=P>[=KGeM3l1L;RY3
+!s85 0
+!s101 -O0
+vmuxCO
+IEP`HkLJ<P4JTBFfCgzmS13
+V<A?Kb]z;]Bo_L9ABC:dF83
+R1
+w1383570516
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/muxCO.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/muxCO.v
+L0 4
+R3
+r1
+31
+R4
+R5
+nmux@c@o
+!s100 4@5Zl<NSlZP_eF<dkAVhk0
+!s85 0
+!s101 -O0
+vone_bit_adder
+IQ2FzWL5dlE?Q7enHaVE@;2
+V>QW1WfM>?4NC;JfCgciPe0
+R1
+R2
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/one_bit_adder.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/one_bit_adder.v
+L0 4
+R3
+r1
+31
+R4
+R5
+!s100 5?AHKT6k5SdVDCf[W;71M3
+!s85 0
+!s101 -O0
+vshifter
+IEe<oFV2PcBF97c8UMoQZU1
+VNOIgGUB?o^mBJe5W`<2BA3
+R1
+w1383571153
+8C:/Users/Vasudharini/Downloads/alu (1)/alu/shifter.v
+FC:/Users/Vasudharini/Downloads/alu (1)/alu/shifter.v
+L0 4
+R3
+r1
+31
+R4
+R5
+!s100 NaU:ZS@klnoCgT2cV^;jA0
+!s85 0
+!s101 -O0

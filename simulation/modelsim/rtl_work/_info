@@ -1,0 +1,458 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Lab User\Downloads\Lab 5\Lab 5\simulation\modelsim
+vadder
+I^dZCj2^1NME0RjGEOfWcD2
+VNo95h;=CDfz^QcfhJG7ik2
+Z1 dC:\Users\Lab User\Downloads\Lab 5\Lab 5\simulation\modelsim
+Z2 w1386120959
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/adder.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/adder.v
+L0 4
+Z3 OV;L;6.6d;45
+r1
+31
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work {+incdir+C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu} -O0
+!s100 KRdCPEiYn0cD^>n3a6<Fa0
+!s85 0
+!s101 -O0
+valu
+IL;OUAKi:YG<WNjPj;MM6m2
+V<S@`Ch1n0Q7@nQ;oHYJQ^2
+R1
+R2
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/alu.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/alu.v
+L0 4
+R3
+r1
+31
+R4
+R5
+!s100 WF2bfES9gO0S7ZnGOY`lJ0
+!s85 0
+!s101 -O0
+vbranch_mux
+I8Ck3F325IFGh>9Ra>;klR3
+VW:BUM0eZKAC1KoCFnALa12
+R1
+Z6 w1386120955
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/branch_mux.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/branch_mux.v
+L0 6
+R3
+r1
+31
+R4
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/Lab User/Downloads/Lab 5/Lab 5} -O0
+!s100 @LOK3aLCiME`mQDjQgEch2
+!s85 0
+!s101 -O0
+vcontrol
+I[O9IZbJ?i]]YFnRcjbf7f1
+VO@;eR0WjT@Vi9?8k8[ZeO2
+R1
+R2
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/control.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/control.v
+L0 11
+R3
+r1
+31
+R4
+R5
+!s100 4OOMDQ>LV9i2[EaBzUlOe1
+!s85 0
+!s101 -O0
+vcpu
+IPA3j5dUo3TN78>1G6Tg8=3
+V9`c84@GNjZ10>TGf2=GDY3
+R1
+Z8 w1386120956
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/cpu.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/cpu.v
+L0 6
+R3
+r1
+31
+R4
+R7
+!s100 jd7jcM`[g=OgLOz_z9UIl1
+!s85 0
+!s101 -O0
+vdecoder
+INajm@9mRbT^_<_IT=Tzdi2
+V`MDc_fW@`:fM5MMQ@m<]03
+R1
+R8
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/decoder.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/decoder.v
+L0 6
+R3
+r1
+31
+R4
+R7
+!s100 d[YH86@]F_odDU3QoF_;l2
+!s85 0
+!s101 -O0
+vhalt
+IPI[miV280dNXdjKoZ12S60
+V86WOkf4klg?14NjnJlCIW3
+R1
+R8
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/halt.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/halt.v
+L0 6
+R3
+r1
+31
+R4
+R7
+!s100 FWTgk720CWW7kHfNVI__d3
+!s85 0
+!s101 -O0
+vhex_7seg
+I<?IY2X1B=L3@G_]_loCfB1
+Vk69KmRUW@[4Ia:L3DCfoP0
+R1
+R6
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/hex_7seg.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/hex_7seg.v
+L0 4
+R3
+r1
+31
+R4
+R7
+!s100 M@g5]dWdE1HUDJ0G7o=9^0
+!s85 0
+!s101 -O0
+vimm_mux
+I81aYMMiCZ6hh_M3;8m[C40
+VUUzSlV3KN?REMYJ46nHVP2
+R1
+R8
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/imm_mux.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/imm_mux.v
+L0 4
+R3
+r1
+31
+R4
+R7
+!s100 ccL28Ll`;AKWVWeKl301`0
+!s85 0
+!s101 -O0
+vlab5
+I<TV;8o[TiSQG<em23U_RO1
+Va@XL=gPZQdeOV3Zz?KWoN2
+R1
+w1386128816
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5.v
+L0 4
+R3
+r1
+31
+R4
+R7
+!s100 KK^]O2nEJQe48V7E6F@513
+!s85 0
+!s101 -O0
+vlab5_clk
+IgS=1jW=:nXKH:EIO:z1P[0
+V3hKIPZlcN2e3o54`?kZLZ2
+R1
+R6
+Z9 8C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5_clk.v
+Z10 FC:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5_clk.v
+L0 4
+R3
+r1
+31
+R4
+R7
+!s100 ?dQ8K3GZ>BN8Xlclfhi[_1
+!s85 0
+!s101 -O0
+vlab5_test
+!s100 89Gc=2mU]SYL957dYzI5]3
+IJ<[CNRS`C8OUNkhH<5Y`G3
+V]Jm_2niz5TW3C:jnY]Yd@0
+R1
+w1386123357
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5_test.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5_test.v
+L0 13
+R3
+r1
+!s85 0
+31
+!s101 -O0
+R4
+R7
+vlab5dramHBM
+IOiBJSM2Q`Cce]AVIOLXB_2
+VJSm0>WBk>0Y@P]f?M:n`33
+R1
+R6
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5dramHBM.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5dramHBM.v
+L0 4
+R3
+r1
+31
+R4
+R7
+nlab5dram@h@b@m
+!s100 3=HP9Zj[N<SmVjiEJfW@]1
+!s85 0
+!s101 -O0
+vlab5iramHBM
+I[JOLUmc^dDP2?Xn4jKQ[`3
+VYb@lJ3ES^<L`:lbQKCLdJ1
+R1
+w1386128801
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5iramHBM.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/lab5iramHBM.v
+L0 4
+R3
+r1
+31
+R4
+nlab5iram@h@b@m
+R7
+!s100 OgZhi>[c<^BbY07ggBm<33
+!s85 0
+!s101 -O0
+vlogical
+IE^eABC6EghXcUPQ:CW;_52
+VmI4AnjHEYRLUd_6R<8P0Z1
+R1
+R2
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/logical.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/logical.v
+L0 4
+R3
+r1
+31
+R4
+R5
+!s100 =YbF<6AafW1Jc@5E@CQ`I0
+!s85 0
+!s101 -O0
+vmem_mux
+Iz`W;QX9TkRcGcD7KDiG5_0
+VLzQBiSmGUSOSAB=m?WnH42
+R1
+R6
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/mem_mux.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/mem_mux.v
+L0 4
+R3
+r1
+31
+R4
+R7
+!s100 3Voc4FG@Z]PAYz7H?RP`@1
+!s85 0
+!s101 -O0
+vmux_out
+I592hLC7ZL`aQ9EV??Jj9[2
+V3O0MDB0;BoD5l3_J@@3lT1
+R1
+R2
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/mux_out.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/mux_out.v
+L0 4
+R3
+r1
+31
+R4
+R5
+!s100 MTfDZHn1UhA8bW=NG404;2
+!s85 0
+!s101 -O0
+vmuxBneg
+I@zabGX_4gBh<H9GaHKiW80
+V9zYg:6jg803U?;c0aUCSk1
+R1
+w1386120960
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/muxBneg.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/muxBneg.v
+L0 4
+R3
+r1
+31
+R4
+R5
+nmux@bneg
+!s100 zcU;5R@?g9liQUSE?Kde61
+!s85 0
+!s101 -O0
+vmuxCI
+IDbALl`eN@]FTMU`DjIoW13
+V2<Me4HXiVRY[l<jLD8mH31
+R1
+R2
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/muxCI.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/muxCI.v
+L0 4
+R3
+r1
+31
+R4
+R5
+nmux@c@i
+!s100 Ffi>8=P>[=KGeM3l1L;RY3
+!s85 0
+!s101 -O0
+vmuxCO
+IPa:?iYzbDKNHO]>R=Xf:W1
+Vej5Xc7kB?EEY0LW5@oE5d3
+R1
+R2
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/muxCO.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/muxCO.v
+L0 4
+R3
+r1
+31
+R4
+R5
+nmux@c@o
+!s100 gkQe]Ibe=^QYWM_e3=GmZ0
+!s85 0
+!s101 -O0
+vone_bit_adder
+I@[SK?ZGzCG6<UgooVa2980
+V>QW1WfM>?4NC;JfCgciPe0
+R1
+R2
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/one_bit_adder.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/one_bit_adder.v
+L0 4
+R3
+r1
+31
+R4
+R5
+!s100 5?AHKT6k5SdVDCf[W;71M3
+!s85 0
+!s101 -O0
+vpc
+Ik19cza8ZCJJBZg2[_OE^k0
+VRYeMg?8moCF<Fg>b>jmW63
+R1
+R6
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/pc.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/pc.v
+L0 4
+R3
+r1
+31
+R4
+R7
+!s100 KniKIeX><_KBZWRFLb0>]2
+!s85 0
+!s101 -O0
+vpc_mux
+IQ6:5Cj9Ec1URPKFLZmNb[1
+VABFD`:?^8UHJEhB;PG`6E1
+R1
+R8
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/pc_mux.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/pc_mux.v
+L0 4
+R3
+r1
+31
+R4
+R7
+!s100 1;D[bA:J^>]^izI]U=6MM3
+!s85 0
+!s101 -O0
+vpclock
+ID<mOBgdUA9I`69bWNbn=T2
+VQMlQ?ha[QF3E8>_EfHzR21
+R1
+R6
+R9
+R10
+L0 40
+R3
+r1
+31
+R4
+R7
+!s100 TmY_Gl2QE=_RIhzXRLneo0
+!s85 0
+!s101 -O0
+vregister
+I^REj3ane]<[i4H;mZQ63h1
+VSI_;M5La^2l<U4enIi6]R1
+R1
+R6
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/register.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/register.v
+L0 6
+R3
+r1
+31
+R4
+R7
+!s100 IVcCWX8JAHckj]]E5eQAg1
+!s85 0
+!s101 -O0
+vregister_file
+I0kBQ5Oo2Ml]_dHQZGH7?j0
+VH?CH?i<llH5H_:C4Fed>31
+R1
+R8
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/register_file.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/register_file.v
+L0 6
+R3
+r1
+31
+R4
+R7
+!s100 2;JUL]DYMF8MgGT42KGVb1
+!s85 0
+!s101 -O0
+vshifter
+IZfmMgl>Sm6?]RQZ^SekBg1
+VNOIgGUB?o^mBJe5W`<2BA3
+R1
+R2
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/shifter.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/alu/shifter.v
+L0 4
+R3
+r1
+31
+R4
+R5
+!s100 F?G;?NE=N_KgO^08>XHI90
+!s85 0
+!s101 -O0
+vsign_extend
+IZC0;iLVD61`7D?FACEL3H3
+VhndF7VI6VOI]=cZbimbPh2
+R1
+R6
+8C:/Users/Lab User/Downloads/Lab 5/Lab 5/sign_extend.v
+FC:/Users/Lab User/Downloads/Lab 5/Lab 5/sign_extend.v
+L0 6
+R3
+r1
+31
+R4
+R7
+!s100 68GkUmWfXA^eP8aloTmaT2
+!s85 0
+!s101 -O0

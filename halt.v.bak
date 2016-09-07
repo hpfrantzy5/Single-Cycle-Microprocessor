@@ -1,0 +1,12 @@
+`ifndef _DECODER_V_
+`define _DECODER_V_
+
+`include "constants.v"
+
+module halt (
+	input EN_L,
+	input HALT,
+	output H
+);
+
+

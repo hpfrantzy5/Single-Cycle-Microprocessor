@@ -1,0 +1,117 @@
+# Reading C:/altera/11.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do alu_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\11.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\11.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/muxCI.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module muxCI
+# 
+# Top level modules:
+# 	muxCI
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/shifter.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module shifter
+# 
+# Top level modules:
+# 	shifter
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/logical.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module logical
+# 
+# Top level modules:
+# 	logical
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/control.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/bcd_7seg.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module bcd_7seg
+# 
+# Top level modules:
+# 	bcd_7seg
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/alu.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/adder.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/one_bit_adder.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module one_bit_adder
+# 
+# Top level modules:
+# 	one_bit_adder
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/muxBneg.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module muxBneg
+# 
+# Top level modules:
+# 	muxBneg
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/mux_out.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module mux_out
+# 
+# Top level modules:
+# 	mux_out
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/muxCO.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module muxCO
+# 
+# Top level modules:
+# 	muxCO
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Downloads/alu\ (1)/alu {C:/Users/Vasudharini/Downloads/alu (1)/alu/alu_test.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module alu_test
+# 
+# Top level modules:
+# 	alu_test
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc" alu_test
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps alu_test 
+# Loading work.alu_test
+# Loading work.alu
+# Loading work.control
+# Loading work.muxBneg
+# Loading work.muxCI
+# Loading work.adder
+# Loading work.one_bit_adder
+# Loading work.shifter
+# Loading work.logical
+# Loading work.muxCO
+# Loading work.mux_out
+# Loading work.bcd_7seg
+# ** Warning: (vsim-3017) C:/Users/Vasudharini/Downloads/alu (1)/alu/alu.v(58): [TFMPC] - Too few port connections. Expected 8, found 6.
+#         Region: /alu_test/UUT/adder0
+# ** Warning: (vsim-3722) C:/Users/Vasudharini/Downloads/alu (1)/alu/alu.v(58): [TFMPC] - Missing connection for port 'a'.
+# ** Warning: (vsim-3722) C:/Users/Vasudharini/Downloads/alu (1)/alu/alu.v(58): [TFMPC] - Missing connection for port 'b'.
+# ** Warning: (vsim-3015) C:/Users/Vasudharini/Downloads/alu (1)/alu/alu.v(86): [PCDPC] - Port size (1 or 1) does not match connection size (2) for port 'OSEL'. The port definition is at: C:/Users/Vasudharini/Downloads/alu (1)/alu/muxCO.v(5).
+#         Region: /alu_test/UUT/muxCO0
+# WARNING: No extended dataflow license exists
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module alu_test at C:/Users/Vasudharini/Downloads/alu (1)/alu/alu_test.v line 58
+# Simulation Breakpoint: Break in Module alu_test at C:/Users/Vasudharini/Downloads/alu (1)/alu/alu_test.v line 58
+# MACRO ./alu_run_msim_rtl_verilog.do PAUSED at line 27

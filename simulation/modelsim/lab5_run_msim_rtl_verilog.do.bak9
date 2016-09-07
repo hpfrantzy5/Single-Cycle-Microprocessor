@@ -1,0 +1,40 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder/alu {C:/Users/Vasudharini/Dropbox/New folder/alu/shifter.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder/alu {C:/Users/Vasudharini/Dropbox/New folder/alu/one_bit_adder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder/alu {C:/Users/Vasudharini/Dropbox/New folder/alu/muxCO.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder/alu {C:/Users/Vasudharini/Dropbox/New folder/alu/muxCI.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder/alu {C:/Users/Vasudharini/Dropbox/New folder/alu/muxBneg.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder/alu {C:/Users/Vasudharini/Dropbox/New folder/alu/mux_out.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder/alu {C:/Users/Vasudharini/Dropbox/New folder/alu/logical.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder/alu {C:/Users/Vasudharini/Dropbox/New folder/alu/control.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder/alu {C:/Users/Vasudharini/Dropbox/New folder/alu/alu.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder/alu {C:/Users/Vasudharini/Dropbox/New folder/alu/adder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/pc.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/mem_mux.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/lab5iram.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/lab5dram.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/lab5_clk.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/lab5.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/imm_mux.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/hex_7seg.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/constants.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/sign_extend.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/register_file.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/register.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/decoder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/cpu.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/Vasudharini/Dropbox/New\ folder {C:/Users/Vasudharini/Dropbox/New folder/lab5_test.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc" lab5_test
+
+add wave *
+view structure
+view signals
+run -all
